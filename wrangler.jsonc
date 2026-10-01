@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "workers-kv-rust",
+  "main": "build/index.js",
+  "compatibility_date": "2026-09-30",
+  "compatibility_flags": [],
+  "workers_dev": true,
+  "kv_namespaces": [
+    {
+      "binding": "KV"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "build": {
+    "command": "cargo install -q worker-build@0.8.0 && worker-build --release"
+  }
+}

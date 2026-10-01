@@ -1,0 +1,17 @@
+{
+  "name": "workers-kv-rust",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --config wrangler.jsonc",
+    "setup": "wrangler kv namespace create app-config --binding KV --update-config --config wrangler.jsonc",
+    "seed:local": "wrangler kv bulk put seeds/config.json --binding KV --local --config wrangler.jsonc",
+    "seed:remote": "wrangler kv bulk put seeds/config.json --binding KV --remote --config wrangler.jsonc",
+    "check": "wrangler deploy --dry-run --config wrangler.jsonc",
+    "deploy": "wrangler deploy --config wrangler.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "^4.145.0"
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "key": "app-config:v1",
+    "value": "{\"revision\":\"v1\",\"theme\":\"warm\",\"banner\":\"Fast search is available to Pro and Enterprise users in EU and NA\",\"fastSearch\":{\"enabled\":true,\"plans\":[\"pro\",\"enterprise\"],\"regions\":[\"EU\",\"NA\"]}}",
+    "metadata": { "revision": "v1" }
+  },
+  {
+    "key": "app-config:v2",
+    "value": "{\"revision\":\"v2\",\"theme\":\"cool\",\"banner\":\"Fast search is now available on every plan and region\",\"fastSearch\":{\"enabled\":true,\"plans\":[\"free\",\"pro\",\"enterprise\"],\"regions\":[\"EU\",\"NA\",\"APAC\"]}}",
+    "metadata": { "revision": "v2" }
+  }
+]
